@@ -29,10 +29,22 @@ height = df[:, ["Safely managed", "Basic", "Limited", "Unimproved", "No Access (
 height = collect(Iterators.flatten(eachrow(height)))
 grp = repeat(1:5, 10)
 
-fig = barplot(x, height,
+label_maker(x) = x > 10 ? "$x" : ""
+labels = floor.(Int, height)
+labels = label_maker.(labels)
+
+f = Figure()
+ax1 = Axis(f[1, 1], yticks=(1:10, df.Entity),
+       title="Only 29% have access to safe drinking water in Low Income Countries, 2020", xticks=(1:100, ["" for i = 1:100]))
+hidespines!(ax1)
+hidexdecorations!(ax1)
+barplot!(x, height,
        stack=grp,
        color=grp,
-       direction=:x
+       direction=:x,
+       bar_labels=labels,
+       label_offset=-30,
 )
+f
 CairoMakie.activate!(type = "png")
 save("plots/part_of_whole.png",fig)
