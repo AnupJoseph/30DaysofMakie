@@ -42,3 +42,4 @@ ax = Axis(f[1, 1], yreversed=true,
 hidespines!(ax)
 hidedecorations!(ax)
 scatter!(points, marker=:rect, markersize=75, color=colors)
+f
