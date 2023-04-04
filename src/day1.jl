@@ -46,5 +46,5 @@ barplot!(x, height,
        label_offset=-30,
 )
 f
-CairoMakie.activate!(type = "png")
-save("plots/part_of_whole.png",fig)
+# CairoMakie.activate!(type = "png")
+# save("plots/part_of_whole.png",fig)
