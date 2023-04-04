@@ -2,7 +2,7 @@ tasks:
   - init: |
       wget https://julialang-s3.julialang.org/bin/linux/x64/1.8/julia-1.8.1-linux-x86_64.tar.gz
       tar zxvf julia-1.8.1-linux-x86_64.tar.gz
-      echo "export PATH='$PATH:/workspace/30DaysofMakie/julia-1.8.1/bin'">> ~/.bashrc
+      echo "export PATH='$PATH:/workspace/30DaysofMakie/julia-1.8.1/bin/julia'">> ~/.bashrc
       source ~/.bashrc
   - command: |
       source ~/.bashrc
