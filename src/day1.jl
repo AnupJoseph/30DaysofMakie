@@ -33,9 +33,10 @@ label_maker(x) = x > 10 ? "$x" : ""
 labels = floor.(Int, height)
 labels = label_maker.(labels)
 
-f = Figure()
-ax1 = Axis(f[1, 1], yticks=(1:10, df.Entity),
-       title="Only 29% have access to safe drinking water in Low Income Countries, 2020", xticks=(1:100, ["" for i = 1:100]))
+f = Figure(fonts=(; body="fonts/Cabin-VariableFont_wdth,wght.ttf", weird="fonts/Outfit-Bold.ttf"))
+ax1 = Axis(f[1, 1], yticks=(1:10, df.Entity), title="Only 29% have access to safe drinking \n water in Low Income Countries, 2020", titlesize=30, xticks=(1:100, ["" for i = 1:100]),titlefont=:weird)
+
+
 hidespines!(ax1)
 hidexdecorations!(ax1)
 barplot!(x, height,
@@ -44,6 +45,7 @@ barplot!(x, height,
        direction=:x,
        bar_labels=labels,
        label_offset=-30,
+       label_font= :body
 )
 f
 # CairoMakie.activate!(type = "png")
