@@ -2,3 +2,6 @@
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+JSONTables = "b9914132-a727-11e9-1322-f18e41205b0b"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
