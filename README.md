@@ -1,4 +1,5 @@
-This repo is an attempt to recreate some plots of the #30DayChartsChallenge with `Makie.jl` and some other Julia when Makie inevitably crashes headfirst into a wall. My creativity and style points are a big ol' goose egg but I am a rogue so instead we will blatantly steal from those with higher creativity levels.
+This repo is an attempt to recreate some plots of the #30DayChartsChallenge with `Makie.jl` and some other Julia when Makie inevitably crashes headfirst into a wall. My creativity and style points are a big ol' goose egg but I am a rogue so instead we will blatantly steal from those with higher creativity levels. The only rule for selecting these graphs is the rule of cool.
+
 
 I will make these graphs prettier at some latter point.
 
@@ -9,9 +10,9 @@ I will make these graphs prettier at some latter point.
 * Comparisons
   * Day 1: [Part-to-Whole](https://github.com/AnupJoseph/30DaysofMakie/blob/main/src/day1.jl)
   * Day 2: [Waffle](https://github.com/AnupJoseph/30DaysofMakie/blob/main/src/day2.jl)
-  * Day 3: [fauna-flora](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/03-fauna_flora)
-  * Day 4: [Historical]
-  * Day 5: [Slope]
+  * Day 3: [fauna-flora](https://github.com/AnupJoseph/30DaysofMakie/blob/main/src/day3.jl)
+  * Day 4: [Historical](https://github.com/AnupJoseph/30DaysofMakie/blob/main/src/day4.jl)
+  * Day 5: [Slope](https://github.com/AnupJoseph/30DaysofMakie/blob/main/src/day5.jl)
   * Day 6: [data-day-OWID]
 * Distributions
   * Day 7: [Hazards]
@@ -49,8 +50,20 @@ I will make these graphs prettier at some latter point.
 
 ### Day 01: [Part-to-Whole](https://github.com/AnupJoseph/30DaysofMakie/blob/main/src/day1.jl)
 
-![drinking water](https://github.com/AnupJoseph/30DaysofMakie/blob/main/plots/part_of_whole.png)
+![Drinking Water](https://github.com/AnupJoseph/30DaysofMakie/blob/main/plots/part_of_whole.png)
 
 ### Day 02: [Waffle](https://github.com/AnupJoseph/30DaysofMakie/blob/main/src/day2.jl)
 
 ![Endangered Sharks](https://github.com/AnupJoseph/30DaysofMakie/blob/main/plots/waffle.png)
+
+### Day 03: [Flora And Fauna](https://github.com/AnupJoseph/30DaysofMakie/blob/main/src/day2.jl)
+
+![Asian Elephants](https://github.com/AnupJoseph/30DaysofMakie/blob/main/plots/flora_and_fauna.png)
+
+### Day 04: [Historical](https://github.com/AnupJoseph/30DaysofMakie/blob/main/src/day4.jl)
+
+![CO$_2$](https://github.com/AnupJoseph/30DaysofMakie/blob/main/plots/historical.png)
+
+### Day 05: [Slope](https://github.com/AnupJoseph/30DaysofMakie/blob/main/src/day5.jl)
+
+![Population Growth](https://github.com/AnupJoseph/30DaysofMakie/blob/main/plots/slope.png)
